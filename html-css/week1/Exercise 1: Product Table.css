@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  height: 100rem;
+  color: white;
+}
+
+.table {
+  position: relative;
+  background-color: gray;
+  padding: 2rem;
+  margin: 0 auto;
+}
+
+.table-caption {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  color: green;
+}
+
+.button {
+  cursor: pointer;
+
+  &:hover {
+    color: red;
+  }
+
+  &:focus {
+    color: blue;
+  }
+}
+
+@media (min-width: 48rem) {
+  .table-caption {
+    position: static;
+    color: red;
+  }
+}
